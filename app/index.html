@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>مستندات</title>
+  <link rel="stylesheet" href="./css/fileicon.css">
+  <link rel="stylesheet" href="./css/ionicons.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div class="grid">
+    <div class="navigation">
+      <ul>
+        <li onclick="addItem()"><a>انشاء ملف جديد</a></li>
+        <li><a href="./settings.html">الاعدادات</a></li>
+      </ul>
+    </div>
+    <div class="col-3">
+      <div class="content">
+        <div class="search">
+          <input type="search" id="search" placeholder="ابحث...">
+        </div>
+        <div class="sort">
+          <i class="icon ion-md-grid" style="font-size: 22px" onclick="sort('grid')"></i>
+          <i class="icon ion-md-list" style="font-size: 22px" onclick="sort('list')"></i>
+        </div>
+      </div>
+      <div id="list" class="list-items">
+        <!-- <div class="content item">
+          <div class="file-icon file-icon-lg" data-type="doc"></div>
+          <div class="item-content">
+            <h3>عنوان الملف</h3>
+            <div class="content-hidden" hidden>
+                Use our design language in your site
+            </div>
+            <i class="icon ion-md-trash"></i>
+            <small> تاريخ الأنشاء - ١٤٤٠/١٠/١٦ </small>
+            <small> تاريخ التعديل - ١٤٤٠/١٠/١٨ </small>
+          </div>
+        </div> -->
+      </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/moment.min.js"></script>
+  <script src="./js/ar-moment.js"></script>
+  <script src="./js/database.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

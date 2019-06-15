@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <!-- <link href="https://unpkg.com/ionicons@4.5.9-1/dist/css/ionicons.min.css" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="./css/ionicons.min.css">
+  <link rel="stylesheet" href="./css/editor.css">
+  <link rel="stylesheet" href="./css/print.css">
+</head>
+<body>
+  <div class="tool-bar-app -no-print" style="position: fixed; width: 100%; z-index: 1">
+    <span id="save"> حفظ
+        <i class="icon ion-md-save"></i>
+      </span>
+    <span id="print" onclick="print()"> طباعة
+        <i class="icon ion-md-print"></i>
+      </span>
+  </div>
+  <main>
+    <div class="document-editor">
+      <div class="toolbar-container" style="position: fixed; width: 100%;top: 36px"></div>
+        <div class="content-container">
+          <div id="editor">
+          </div>
+        </div>		
+      </div>
+  </main>
+  <script src="./js/database.js"></script>
+  <script src="./js/ckeditor.js"></script>
+  <script src="./js/ar.js"></script>
+  <script src="./js/editor.js"></script>
+</body>
+</html>

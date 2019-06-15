@@ -1,0 +1,127 @@
+:root {
+	--ck-sample-base-spacing: 8rem 2rem;;
+  --ck-sample-color-white: #fff;
+}
+
+
+html, body {
+  height: 100%;
+  padding: 0;
+	margin: 0;
+  direction: rtl;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+/* Editor  */
+
+
+main .document-editor {
+	border: 1px solid #DFE4E6;
+	border-bottom-color: #cdd0d2;
+	border-right-color: #cdd0d2;
+	border-radius: 2px;
+	display: flex;
+	flex-flow: column nowrap;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
+
+main .toolbar-container {
+	z-index: 1;
+	position: relative;
+	box-shadow: 2px 2px 1px rgba(0,0,0,.05);
+}
+
+main .toolbar-container .ck.ck-toolbar {
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+	border-radius: 0;
+}
+
+main .content-container {
+	padding: var(--ck-sample-base-spacing);
+	background: #eee;
+	overflow-y: scroll;
+}
+
+main .content-container #editor {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+  background: #fff;
+	width: 21cm;
+	min-height: 29.7cm;
+	padding: 1cm 1cm;
+	margin: 0 auto;
+	box-shadow: 2px 2px 1px rgba(0,0,0,.05);
+}
+
+
+figure {
+  width: -webkit-fill-available;
+}
+
+table {
+  width: -webkit-fill-available !important;
+}
+
+/* app bar */
+
+.tool-bar-app {
+  height: 36px;
+  background: rgb(250, 250, 250);
+  display: flex;
+  align-items: center;
+}
+
+.tool-bar-app > span {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tool-bar-app > span:hover {
+  background: rgb(214, 214, 214);
+  cursor: pointer;
+}
+
+.tool-bar-app > span > i {
+  font-size: x-large;
+  padding: 0 3rem;
+}
+
+/* fonts - size  */
+/* 
+.text-10pt {
+  font-size: 10pt
+}
+.text-12pt {
+  font-size: 12pt
+}
+.text-14pt {
+  font-size: 14pt
+}
+.text-16pt {
+  font-size: 16pt
+}
+.text-18pt {
+  font-size: 17pt
+}
+.text-20pt {
+  font-size: 20pt
+}
+.text-22pt {
+  font-size: 22pt
+}
+.text-24pt {
+  font-size: 24pt
+}
+.text-26pt {
+  font-size: 26pt
+}
+.text-28pt {
+  font-size: 28pt
+} */

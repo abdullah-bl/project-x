@@ -1,0 +1,137 @@
+html, body {
+  height: 100%;
+  padding: 0;
+	margin: 0;
+  direction: rtl;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background: #faf9f8
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+.col-3 {
+  grid-column: span 3 / auto;
+  margin: 10px;
+}
+
+.navigation {
+  height: 100%;
+  background: #ffffff;
+  display: grid;
+  text-align: center;
+  padding: 2rem 0;
+  box-shadow: 1px 1px 0px rgba(43, 43, 43, 0.09);
+}
+
+.navigation > ul {
+  list-style: none;
+  padding: 1rem 0
+}
+.navigation > ul > li {
+  padding: 5px 0;
+  color: #333
+}
+
+.navigation > ul > li > a {
+  color: #2f2f2f;
+  text-decoration: none;
+}
+.navigation > ul > li:hover {
+  cursor: pointer;
+  background: #faf9f8
+}
+
+.content {
+  background: #ffffff;
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0px rgba(43, 43, 43, 0.09);
+  /* height: 88vh; */
+}
+
+
+hr {
+  border-color: #faf9f8;
+  border-width: 1px;
+  margin: 1rem 0;
+  border-style: double;
+}
+
+.search {
+  text-align: center;
+  margin: 1rem;
+}
+input[type=search] {
+  background-color: #faf9f8;
+  font: 400 16px system-ui;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid #faf9f8;
+  outline: #333;
+  width: 35%;
+}
+
+input[type=search]:focus {
+  border: 2px solid #2f2f2f;
+}
+
+#list {
+  height: 80vh;
+  overflow: scroll;
+}
+
+.list-items {
+  display: list-item;
+}
+.grid-items {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  flex: 1;
+  align-items: baseline;
+  align-content: end;
+}
+
+.item {
+  display: flex;
+}
+.item > * {
+  padding: 0 1rem
+}
+.item-content {
+  grid-column: span 7 / auto;
+}
+
+h3 {
+  margin-block-start: 0;
+  margin-block-end: 1em;
+}
+
+.sort {
+  text-align: left;
+}
+.sort > i {
+  padding-right:1rem;
+  cursor: pointer;
+}
+
+.item-icon {
+  font-size: x-large;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.item-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 10px;
+}
