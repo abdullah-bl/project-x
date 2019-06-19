@@ -66,28 +66,6 @@ hr {
   border-style: double;
 }
 
-.search {
-  text-align: center;
-  margin: 1rem;
-}
-input[type=search] {
-  background-color: #faf9f8;
-  font: 400 16px system-ui;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: 2px solid #faf9f8;
-  outline: #333;
-  width: 35%;
-}
-
-input[type=search]:focus {
-  border: 2px solid #2f2f2f;
-}
-
-#list {
-  height: 80vh;
-  overflow: scroll;
-}
 
 .list-items {
   display: list-item;
@@ -134,4 +112,37 @@ h3 {
   font-size: 1.2rem;
   font-weight: 400;
   margin: 0 10px;
+}
+
+/* new addedd */
+
+main {
+  margin-top: 4%;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input[type=search] {
+  background-color: #ffffff;
+  font: 400 16px system-ui;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid #faf9f8;
+  outline: #333;
+  width: 35%;
+  border: 2px solid #e4e4e4;
+}
+
+input[type=search]:focus {
+  border: 2px solid #2f2f2f;
+}
+
+#list {
+  /* background: #ffffff; */
+  padding: 1rem;
+  margin: 1rem 0;
 }

@@ -13,15 +13,15 @@ function createWindow () {
     // transparent: true,
     // titleBarStyle: 'hidden',
     webPreferences: {
-      devTools: false,
-      nodeIntegration: false,
+      devTools: true,
+      nodeIntegration: true,
       preload: path.join(__dirname, 'preload.js')
     }
   })
 
   // and load the index.html of the app.
-  win.loadFile('./app/index.html')
-  // win.loadURL('http://127.0.0.1:8080')
+  // win.loadFile('./app/app.html')
+  win.loadURL('http://127.0.0.1:8080')
 
   // Open the DevTools.
   win.webContents.openDevTools()

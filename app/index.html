@@ -4,48 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>مستندات</title>
+  <title></title>
+  <link rel="stylesheet" href="./css/title-bar.css">
   <link rel="stylesheet" href="./css/fileicon.css">
   <link rel="stylesheet" href="./css/ionicons.min.css">
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  <div class="grid">
-    <div class="navigation">
-      <ul>
-        <li onclick="addItem()"><a>انشاء ملف جديد</a></li>
-        <li><a href="./settings.html">الاعدادات</a></li>
-      </ul>
+  <div class="title-bar">
+    <div class="title-bar-btn">
+      <span id="new-item">
+        <i class="icon ion-md-document"></i>
+        ملف جديد
+      </span>
     </div>
-    <div class="col-3">
-      <div class="content">
-        <div class="search">
-          <input type="search" id="search" placeholder="ابحث...">
-        </div>
-        <div class="sort">
-          <i class="icon ion-md-grid" style="font-size: 22px" onclick="sort('grid')"></i>
-          <i class="icon ion-md-list" style="font-size: 22px" onclick="sort('list')"></i>
-        </div>
-      </div>
-      <div id="list" class="list-items">
-        <!-- <div class="content item">
-          <div class="file-icon file-icon-lg" data-type="doc"></div>
-          <div class="item-content">
-            <h3>عنوان الملف</h3>
-            <div class="content-hidden" hidden>
-                Use our design language in your site
-            </div>
-            <i class="icon ion-md-trash"></i>
-            <small> تاريخ الأنشاء - ١٤٤٠/١٠/١٦ </small>
-            <small> تاريخ التعديل - ١٤٤٠/١٠/١٨ </small>
-          </div>
-        </div> -->
-      </div>
-      </div>
+    <div class="controls">
+      <i id="app-title">APP TITLE</i>
+      <i>|</i>
+      <i class="icon ion-md-remove"></i>
+      <i class="icon ion-md-close"></i>
     </div>
   </div>
-  <script src="./js/moment.min.js"></script>
-  <script src="./js/ar-moment.js"></script>
+  <main>
+    <section>
+      <input type="search" id="search" placeholder="ابحث...">
+      <div class="sort">
+        <i class="icon ion-md-grid" style="font-size: 22px" onclick="sort('grid')"></i>
+        <i class="icon ion-md-list" style="font-size: 22px" onclick="sort('list')"></i>
+      </div>
+    </section>
+    <div id="list">
+      <div class="item">
+        <div class="file-icon file-icon-lg" data-type="ملف"></div>
+        <div class="item-content">
+          <div class='item-title' id='' ondblclick="">title</div>
+          <div class="content-hidden" hidden></div>
+          <small> اخر تعديل</small>
+          <i class="icon ion-md-trash item-icon" onclick=""></i>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/moments/moment.min.js"></script>
+  <script src="./js/moments/ar-moment.js"></script>
   <script src="./js/database.js"></script>
   <script src="./js/index.js"></script>
 </body>

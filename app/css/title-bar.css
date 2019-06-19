@@ -1,0 +1,42 @@
+ 
+ 
+.title-bar {
+  user-select: none;
+  height: 44px;
+  background: #222;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.title-bar > .title-bar-btn {
+  padding: 0 10px;
+  font-size: 13pt;
+}
+
+.title-bar > .title-bar-btn > span:hover {
+  /* padding: 0 5px; */
+  cursor: pointer;
+}
+
+.title-bar > .controls {
+  font-style: normal;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.controls > i {
+  font-style: normal;
+  padding: 0 10px
+}
+.controls > i.icon.ion-md-close:hover {
+  color: rgb(192, 23, 23)
+}
+.controls > i.icon.ion-md-remove:hover {
+  color: rgb(168, 168, 168)
+}

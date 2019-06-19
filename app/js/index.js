@@ -1,5 +1,5 @@
 
-let data = []
+// let data = []
 var list = document.querySelector('#list')
 
 document.getElementById('search').onkeyup = function search(e) { 
@@ -30,7 +30,7 @@ function addItem(e) {
 }
 
 function changeFileName(e) {
-  var selector = '#title-'+e
+  var selector = '#title-' + e
   var title = document.querySelector(selector)
   title.contentEditable = true // title 
   title.onkeypress = function(key) {
@@ -40,13 +40,6 @@ function changeFileName(e) {
       update(e, { title: title.innerText.trim() })
     }
   }
-}
-
-function update(_id, args) {
-  db.findOne({_id}, function (err, oldDoc) {
-    var newDoc = Object.assign(oldDoc, args)
-    db.update({ _id }, newDoc)
-  })
 }
 
 function loadDoc(doc) {
@@ -65,7 +58,6 @@ function loadDoc(doc) {
         </div>
       `
       list.append(item)
-      // document.getElementById(doc._id).scrollIntoView()
 }
 
 
